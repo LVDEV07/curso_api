@@ -42,7 +42,6 @@ public class CursoController {
         return ResponseEntity.noContent().build();
     }
 
-
     @PutMapping("{id}")
     public CursoResponseDTO atualizar(@PathVariable Long id, @Valid @RequestBody CursoRequestDTO cursoRequestDTO){
         return cursoService.atualizar(id, cursoRequestDTO);
