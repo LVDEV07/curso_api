@@ -36,7 +36,6 @@ public class CursoController {
         return cursoService.buscarPorId(id);
     }
 
-
     @DeleteMapping("{id}")
     public ResponseEntity<Void> deletar(@PathVariable Long id){
         cursoService.deletar(id);
